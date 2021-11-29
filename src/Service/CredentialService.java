@@ -11,8 +11,8 @@ public class CredentialService {
     
     // generate email
     public String genEmail(Employee ob){
-        return ob.getFirstName().toLowerCase()+"."+ob.getLastName().toLowerCase()+"@"+ob.getDepartment().toLowerCase()+
-        ".greatlearning.com";
+        return ob.getFirstName().toLowerCase()+"."+ob.getLastName().toLowerCase()+"@"+
+        ob.getDepartment().replaceAll("\\s", "").toLowerCase()+".greatlearning.com";
     }
 
 

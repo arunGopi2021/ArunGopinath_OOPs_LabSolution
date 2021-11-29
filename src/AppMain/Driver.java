@@ -60,7 +60,7 @@ public class Driver {
         Employee empObj = new Employee(fn,ln,dep);
         CredentialService serObj = new CredentialService();
 
-        System.out.println("\n\nDear Mr. "+empObj.getFirstName()+" your credentials are displayed below:\n");
+        System.out.println("\n\nDear "+empObj.getFirstName()+" your credentials are displayed below:\n");
         System.out.println("Email: "+serObj.genEmail(empObj)+"\n");
         System.out.println("Password: "+serObj.genPw()+"\n");
 
